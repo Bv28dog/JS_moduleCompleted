@@ -1,0 +1,121 @@
+.header_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, rgb(5 24 1), rgb(35 62 36));
+}
+.header_content img {
+  width: 110px;
+}
+.title {
+  font-weight: bold;
+  margin-left: 110px;
+  font-size: 50px;
+  color: rgb(239, 244, 234);
+}
+.button_img {
+  cursor: pointer;
+}
+#cartToggle {
+  transition: transform 0.3s;
+}
+
+#cartToggle:hover {
+  transform: translateY(10px);
+}
+#cartToggle {
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  z-index: 1;
+}
+
+body {
+  background-color: rgb(20, 35, 4);
+}
+.container_cart {
+  border-radius: 10px;
+  display: flex;
+  margin-top: 20px;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 25px;
+  background-image: linear-gradient(to right, rgb(77 80 77), rgb(29 30 29));
+}
+img {
+  width: 150px;
+  border-radius: 5px;
+}
+.cart {
+  position: relative;
+  right: 336px;
+  visibility: hidden;
+  border: solid 10px rgb(110, 112, 109);
+  padding: 25px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, rgb(77 80 77), rgb(29 30 29));
+  width: 600px;
+}
+.products {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 20px;
+  padding-left: 16px;
+  width: 600px;
+}
+.cart-item-count {
+  margin-right: 0px;
+  font-size: 40px;
+  color: rgb(175, 178, 172);
+}
+#cartItemCount {
+  margin-right: 40px;
+  font-size: 30px;
+  color: rgb(175, 178, 172);
+  position: fixed;
+  top: 27px;
+  right: 20px;
+  z-index: 2;
+}
+.butttonClick {
+  border-radius: 10px;
+  background-color: rgb(5, 50, 5);
+  color: rgb(175, 178, 172);
+  margin-bottom: 42px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
+.buttonClickRemove {
+  border-radius: 10px;
+  background-color: rgb(69, 14, 14);
+  color: rgb(175, 178, 172);
+  cursor: pointer;
+  margin-bottom: 42px;
+  width: 100px;
+  height: 40px;
+}
+.productName {
+  margin-left: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(175, 178, 172);
+}
+.emptyCartMessage {
+  font-size: 50px;
+  color: white;
+}
+.quantity {
+  margin-bottom: 10px;
+  color: #e2e2e2;
+  font-size: 20px;
+}
+.productHorizontLine {
+  height: 5px;
+  width: 600px;
+  background-color: rgb(149, 147, 147);
+}
