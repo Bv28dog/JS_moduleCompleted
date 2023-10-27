@@ -155,14 +155,19 @@ window.onload = async () => {
 
 const cartToggle = document.getElementById("cartToggle");
 const cartElement = document.querySelector(".cart");
+
 cartToggle.addEventListener("click", () => {
   if (cartElement.style.visibility === "visible") {
     cartElement.style.visibility = "hidden";
   } else {
     cartElement.style.visibility = "visible";
+    scrollToTop();
   }
   renderCartList();
 });
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
 
 const cartItemCount = document.getElementById("cartItemCount");
 function updateCartItemCount() {
